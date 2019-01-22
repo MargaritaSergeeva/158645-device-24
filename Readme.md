@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Маргарита Сергеева](https://up.htmlacademy.ru/htmlcss/24/user/158645).
-* Наставник: .
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
