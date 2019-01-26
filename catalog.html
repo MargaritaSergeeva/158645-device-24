@@ -15,19 +15,19 @@
       </div>
       <nav class="user-navigation">
         <ul>
-          <li class="profile-link">Валентин Петухов</li>
-          <li class="exit">Выйти</li>
+          <li><a class="profile-link" href="profile.html">Валентин Петухов</a></li>
+          <li><button class="exit" type="button">Выйти</button></li>
         </ul>
       </nav>
-      <div>
+      <div class="compare-goods">
         <a href="#">Сравнить</a>
       </div>
-      <div>
+      <div class="cart">
         <a href="#">Корзина</a>
       </div>
       <nav class="site-navigation">
         <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li><a href="#">Каталог товаров</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -36,17 +36,74 @@
     </header>
     <!-- ####################################### MAIN ################################################# -->
     <main>
-
+      <h1>Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
+      </ul>
+      <section class="filters">
+        <div class="filters-color">
+          <h3>Цвет</h3>
+          <!-- Здесь чекбоксы -->
+        </div>
+        <div class="filters-bluetooth">
+          <h3>Bluetooth</h3>
+          <!-- Здесь радиобаттоны -->
+        </div>
+        <button class="button" type="submit">Показать</button>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список моноподов для селфи</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Любительская селфи-палка">
+            </p>
+            <h3 class="item-title">
+              <a href="#">Любительская селфи-палка</a>
+            </h3>
+            <span>500 руб.</span>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Профессиональная селфи-палка">
+            </p>
+            <h3 class="item-title">
+              <a href="#">Профессиональная селфи-палка</a>
+            </h3>
+            <span>1500 руб.</span>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Непотопляемая селфи-палка">
+            </p>
+            <h3 class="item-title">
+              <a href="#">Непотопляемая селфи-палка</a>
+            </h3>
+            <span>2500 руб.</span>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+            </p>
+            <h3 class="item-title">
+              <a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a>
+            </h3>
+            <span>4900 руб.</span>
+          </li>
+        </ul>
+      </section>
     </main>
     <!-- ################################### FOOTER ################################################## -->
     <footer class="main-footer">
-      <a class="main-footer-logo">
+      <a class="main-footer-logo" href="index.html">
         <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сайта DEVICE">
       </a>
       <div class="user-navigation">
         <ul>
-          <li class="profile-link">Валентин Петухов</li>
-          <li class="exit">Выйти</li>
+            <li><a class="profile-link" href="profile.html">Валентин Петухов</a></li>
+            <li><button class="exit" type="button">Выйти</button></li>
         </ul>
       </div>
       <div class="compare-goods">
@@ -56,7 +113,7 @@
         <a href="#">Корзина</a>
       </div>
       <address>г. Москва, ул. Строителей, 15</address>
-      <div class="site-navigation">
+      <div class="footer-site-navigation">
         <ul>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
