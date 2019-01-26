@@ -7,21 +7,27 @@
   <body>
     <!-- ########################################## HEADER ########################################### -->
     <header class="main-header">
+      <h1 class="main-header-logo">
+        <a>
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сайта DEVICE">
+        </a>
+      </h1> 
       <div class="search">
         <!-- Здесь форма поиска -->
       </div>
-      <nav>
-        <a class="main-header-logo">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сайта DEVICE">
-        </a>
-        <ul class="header-user-navigation">
-          <li class="header-login-link">Войти</li>
+      <nav class="user-navigation">
+        <ul>
+          <li class="login-link">Войти</li>
         </ul>
-        <ul class="header-operations-with-goods">
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-        <ul class="header-site-navigation"">
+      </nav>
+      <div>
+        <a href="#">Сравнить</a>
+      </div>
+      <div>
+        <a href="#">Корзина</a>
+      </div>
+      <nav class="site-navigation">
+        <ul>
           <li><a href="catalog.html">Каталог товаров</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
@@ -31,7 +37,6 @@
     </header>
     <!-- ####################################### MAIN ################################################# -->
     <main>
-      <h1 class="visually-hidden">Интернет магазин DEVICE</h1>
       <section class="about-us">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -52,29 +57,35 @@
     </main>
     <!-- ################################### FOOTER ################################################## -->
     <footer class="main-footer">
-        <a class="main-footer-logo">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сайта DEVICE">
-        </a>
-        <ul class="footer-user-navigation">
-          <li class="footer-login-link">Войти</li>
+      <a class="main-footer-logo">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип сайта DEVICE">
+      </a>
+      <div class="user-navigation">
+        <ul>
+          <li class="login-link">Войти</li>
         </ul>
-        <ul class="footer-operations-with-goods">
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-        <address>г. Москва, ул. Строителей, 15</address>
-        <ul class="footer-site-navigation"">
+      </div>
+      <div class="compare-goods">
+        <a href="#">Сравнить</a>
+      </div>
+      <div class="cart">
+        <a href="#">Корзина</a>
+      </div>
+      <address>г. Москва, ул. Строителей, 15</address>
+      <div class="site-navigation">
+        <ul>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-        <ul class="footer-social">
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-        </ul>
-        <a class="developer" href="https://htmlacademy.ru/">Html Academy</a>
-      </footer>
+      </div>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <div class="footer-social">
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Инстаграм</a>
+        <a class="social-button" href="#">Твиттер</a>
+      </div>
+      <a class="developer" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy lvl 1</a>
+    </footer>
   </body>
 </html>
