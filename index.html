@@ -166,7 +166,23 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта с адресом"></a>
+        <div class="big-map pop-up">
+          <button class="btn-off" type="button" aria-label="Зыкрыть"></button>
+          <img src="img/map-big.jpg" width="960" height="559" alt="Большая карта с адресом">
+        </div>
         <a class="button" href="write-us.html">Напишите нам</a>
+        <div class="pop-up">
+          <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+            <button class="btn-off" type="button" aria-label="Зыкрыть"></button>
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" type="text" name="email" placeholder="email@example.com">
+            <label for="text">Текст письма:</label>
+            <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
     </main>
     <!-- ################################### FOOTER ################################################## -->
