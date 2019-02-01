@@ -66,25 +66,36 @@
           <a href="#">От меньшего к большему</a>
         </div>
         <h2>Фильтр:</h2>
-        <div class="filter-price">
-          <span>Стоимость</span>
-          <span>от 0</span>
-          <span>до 5000</span>
-        </div>
-        <div class="filters-color">
-          <span>Цвет</span>
-          <span>Черный</span>
-          <span>Белый</span>
-          <span>Синий</span>
-          <span>Красный</span>
-          <span>Розовый</span>
-        </div>
-        <div class="filters-bluetooth">
-          <span>Bluetooth</span>
-          <span>Есть</span>
-          <span>Нет</span>
-        </div>
-        <button class="button" type="submit">Показать</button>
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="filter-price">
+            <label>Стоимость</label>
+            <span>от</span>
+            <input type="text" name="price-min" value="0">
+            <span>до</span>
+            <input type="text" name="price-min" value="5000">
+          </div>
+          <fieldset class="filters-color">
+            <legend>Цвет</legend>
+            <input id="black" type="checkbox" name="black" checked>
+            <label for="black">Черный</label>
+            <input id="white" type="checkbox" name="white">
+            <label for="white">Белый</label>
+            <input id="blue" type="checkbox" name="blue" checked>
+            <label for="blue">Синий</label>
+            <input id="red" type="checkbox" name="red" checked>
+            <label for="red">Красный</label>
+            <input id="pink" type="checkbox" name="pink">
+            <label for="pink">Розовый</label>
+          </fieldset>
+          <fieldset class="filters-bluetooth">
+            <legend>Bluetooth</legend>
+            <input id="with-bluetooth" type="radio" name="bluetooth" checked>
+            <label for="with-bluetooth">Есть</label>
+            <input id="without-bluetooth" type="radio" name="bluetooth">
+            <label for="without-bluetooth">Нет</label>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
