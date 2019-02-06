@@ -141,5 +141,20 @@ a {
 	list-style: none;
 }
 
+/* CATEGORIES */
+
+.categories {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.categories ul {
+	list-style: none;
+}
+
 
 
