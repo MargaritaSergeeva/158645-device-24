@@ -200,3 +200,15 @@ a {
 	list-style: none;
 }
 
+/* CONTACTS */
+
+.contacts h2 {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 800;
+	letter-spacing: 0.47px;
+	color: #000000;
+}
+
+
