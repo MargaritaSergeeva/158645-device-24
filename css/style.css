@@ -107,6 +107,22 @@ a {
 	text-transform: none;
 }
 
+.main-header-logo:hover {
+	opacity: 0.6;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
+}
+
+.user-navigation a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 /* ##################################################FOOTER########################################### */
 
 .main-footer {
