@@ -6,15 +6,15 @@ form button, p{outline: 1px solid blue}
 a, span, img, input, b{outline: 1px solid brown}*/
 
 @font-face {
-  font-family: "Gilroy-ExtraBold";
+  font-family: "Gilroy";
 	src: url("fonts/gilroyextrabold.woff2") format("woff2"),
 			 url("fonts/gilroyextrabold.woff") format("woff");
-	font-weight: 300;
+	font-weight: 800;
 	font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy-Light";
+  font-family: "Gilroy";
 	src: url("fonts/gilroylight.woff2") format("woff2"),
 			 url("fonts/gilroylight.woff") format("woff");
 	font-weight: 300;
@@ -22,4 +22,12 @@ a, span, img, input, b{outline: 1px solid brown}*/
 }
 
 body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
 }
