@@ -44,7 +44,8 @@ body {
 	font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 300;
+	font-weight: 300;
+	letter-spacing: 0.15px;
 	color: #464646;
 	
 	background-color: #ffffff;
@@ -66,6 +67,17 @@ a {
   overflow: hidden;
 }
 
+.button {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+
+	background-color: #f0c52e;
+}
+
 /* ##############################################HEADER################################################ */
 
 .main-header {
@@ -82,6 +94,7 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
+	letter-spacing: 3.6px;
 	text-transform: uppercase;
 }
 
@@ -90,11 +103,43 @@ a {
 	font-size: 15px;
 	line-height: 36px;
 	font-weight: 300;
+	letter-spacing: 0.15px;
 	text-transform: none;
 }
 
 /* ###################################################MAIN############################################ */
 
 /* PROMO-SLIDER */
+
+.promo-slide b {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 56px;
+	font-weight: 800;
+	letter-spacing: 0.47px;
+	color: #000000;
+}
+
+.promo-slide th {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 300;
+	letter-spacing: 0.13px;
+}
+
+.promo-slide td {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 300;
+	letter-spacing: 0.36px;
+	color: #000000;
+}
+
+.promo-sliders-nav {
+	list-style: none;
+}
+
 
 
