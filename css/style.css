@@ -49,6 +49,34 @@ body {
 	
 	background-color: #ffffff;
 }
+
 a {
 	text-decoration: none;
+	color: #000000;
 }
+
+.main-header {
+	background-color: rgba(240, 197, 46, 0.5)
+}
+
+.site-navigation ul,
+.user-navigation ul {
+  list-style: none;
+}
+
+.site-navigation {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.catalog-navigation {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	font-weight: 300;
+	text-transform: none;
+}
+
