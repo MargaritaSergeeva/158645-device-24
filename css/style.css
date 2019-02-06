@@ -5,5 +5,21 @@ li, ul, fieldset {outline: 1px solid red}
 form button, p{outline: 1px solid blue}
 a, span, img, input, b{outline: 1px solid brown}*/
 
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+	src: url("fonts/gilroyextrabold.woff2") format("woff2"),
+			 url("fonts/gilroyextrabold.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+	src: url("fonts/gilroylight.woff2") format("woff2"),
+			 url("fonts/gilroylight.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
 body {
 }
