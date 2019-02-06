@@ -179,5 +179,24 @@ a {
 	color: #000000;
 }
 
+/* ABOUT US */
 
+.about-us h2 {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 800;
+	letter-spacing: 0.47px;
+	color: #000000;
+}
+
+.delivery-companies {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 800;
+	color: #000000;
+
+	list-style: none;
+}
 
