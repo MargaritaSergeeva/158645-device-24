@@ -1,0 +1,9 @@
+/*div {outline: 1px solid #ff00ff}
+header, footer {outline: 1px solid white}
+nav, section, article {outline: 1px solid yellow}
+li, ul, fieldset {outline: 1px solid red}
+form button, p{outline: 1px solid blue}
+a, span, img, input, b{outline: 1px solid brown}*/
+
+body {
+}
