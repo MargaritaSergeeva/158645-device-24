@@ -107,20 +107,20 @@ a {
 	text-transform: none;
 }
 
-.main-header-logo:hover {
+.main-header-logo:hover,
+.main-header-logo:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
 	opacity: 0.6;
 }
 
-.main-header-logo:active {
+.main-header-logo:active,
+.user-navigation a:active,
+.site-navigation a:active,
+.exit {
 	opacity: 0.3;
-}
-
-.user-navigation a:hover {
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.user-navigation a:active {
-	color: rgba(0, 0, 0, 0.3);
 }
 
 /* ##################################################FOOTER########################################### */
