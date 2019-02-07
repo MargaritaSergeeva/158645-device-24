@@ -1,10 +1,3 @@
-/*div {outline: 1px solid #ff00ff}
-header, footer {outline: 1px solid white}
-nav, section, article {outline: 1px solid yellow}
-li, ul, fieldset {outline: 1px solid red}
-form button, p{outline: 1px solid blue}
-a, span, img, input, b{outline: 1px solid brown}*/
-
 @font-face {
   font-family: "Open Sans";
 	src: url("fonts/opensans.woff2") format("woff2"),
@@ -303,6 +296,10 @@ a {
 }
 
 /* CONTACT FORM */
+.contacts .modal {
+	background-color: #ffffff;
+	box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
+}
 
 .contact-form label {
 	font-family: "Gilroy", Arial, sans-serif;
@@ -311,6 +308,38 @@ a {
 	font-weight: 800;
 	letter-spacing: 0.18px;
 	color: #000000;
+}
+
+.contact-form input,
+.contact-form textarea {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #464646;
+
+	background-color: rgba(229, 229, 229, 0.5);
+	border: none;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover
+ {
+	background-color: rgba(229, 229, 229, 1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	background-color: #ffffff;
+	outline: 3px solid #f0c52e;
+	outline-offset: -3px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: rgba(70, 70, 70, 0.4);
 }
 
 /* ###########################################INNER PAGE############################################### */
@@ -439,11 +468,29 @@ a {
 	color: #464646;
 }
 
+/* POP UP */
+
+.overlay-item .add-compare {
+	font-size: 13px;
+	line-height: 36px;
+	letter-spacing: 0.13px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-item .add-compare:hover,
+.overlay-item .add-compare:focus {
+	color: #000000;
+}
+
+.overlay-item .add-compare:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+
 /* PAGINATION */
 
 .pagination {
 	list-style: none;
-	
+
 	background-color: #efefef;
 }
 .pagination a {
