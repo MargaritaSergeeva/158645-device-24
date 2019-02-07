@@ -78,6 +78,10 @@ a {
 	background-color: #f0c52e;
 }
 
+.button:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 /* ##############################################HEADER################################################ */
 
 .main-header {
@@ -108,19 +112,25 @@ a {
 }
 
 .main-header-logo:hover,
-.main-header-logo:focus,
+.main-header-logo:focus{
+	opacity: 0.6;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
+}
+
 .user-navigation a:hover,
 .user-navigation a:focus,
 .site-navigation a:hover,
 .site-navigation a:focus {
-	opacity: 0.6;
+	color: rgba(0, 0, 0, 0.6);
 }
 
-.main-header-logo:active,
 .user-navigation a:active,
 .site-navigation a:active,
 .exit {
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 /* ##################################################FOOTER########################################### */
@@ -143,6 +153,17 @@ a {
 	color: rgba(255, 255, 255, 0.7);
 }
 
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus {
+	color: #ffffff;
+}
+
+.footer-user-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+
+
 .footer-site-navigation a {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
@@ -150,6 +171,19 @@ a {
 	font-weight: 800;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;	
+}
+
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-navigation .exit {
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .social-button,
