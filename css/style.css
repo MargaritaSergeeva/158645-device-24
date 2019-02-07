@@ -438,3 +438,44 @@ a {
 	letter-spacing: 0.16px;
 	color: #464646;
 }
+
+/* PAGINATION */
+
+.pagination {
+	list-style: none;
+	
+	background-color: #efefef;
+}
+.pagination a {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 3.2px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.pagination .pagination-page {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination .active {
+	color: #000000;
+}
+
+.pagination .pagination-page:hover,
+.pagination .pagination-page:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination .pagination-page:active {
+	color: #000000;
+}
+
+.pagination .pagination-prev:active,
+.pagination .pagination-next:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+
