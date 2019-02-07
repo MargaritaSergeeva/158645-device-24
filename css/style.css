@@ -69,6 +69,7 @@ a {
 	text-transform: uppercase;
 
 	background-color: #f0c52e;
+	border: none;
 }
 
 .button:active {
@@ -79,6 +80,44 @@ a {
 
 .main-header {
 	background-color: rgba(240, 197, 46, 0.5)
+}
+
+.search input[type="search"] {
+	background-color: inherit;
+	border: none;
+}
+
+.search input[type="search"]:focus {
+	background-color: inherit;
+	border-bottom: 2px solid #000000;
+	outline: none;
+}
+
+.search input::placeholder {
+	color: 	rgba(0, 0, 0, 0.3);
+}
+
+.search:hover input::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.search .search-btn {
+	color: #000000;
+
+	background-color: inherit;
+	outline: 2px solid #000000;
+	border: none;
+}
+
+.search .search-btn:hover, 
+.search .search-btn:focus {
+	color: #ffffff;
+	
+	background-color: #000000;
+}
+
+.search .search-btn:active {
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .site-navigation ul,
