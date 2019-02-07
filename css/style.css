@@ -135,10 +135,8 @@ a {
 }
 
 .catalog-navigation {
-	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 36px;
-	font-weight: 300;
 	letter-spacing: 0.15px;
 	text-transform: none;
 }
@@ -235,10 +233,8 @@ a {
 }
 
 .promo-slide th {
-	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 20px;
-	font-weight: 300;
 	letter-spacing: 0.13px;
 }
 
@@ -300,6 +296,7 @@ a {
 .services-sliders-nav button:active {
 	color: #f7e184;
 	background-color: #000000;
+	outline: none;
 }
 
 /* ABOUT US */
@@ -439,7 +436,6 @@ a {
 }
 
 .sort a {
-	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -474,12 +470,18 @@ a {
 	color: #000000;
 }
 
-.filter-price label {
+.filter-price label,
+.filter-price input {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.2);
+}
+
+.filter-price input {
+	background-color: inherit;
+	border: none;
 }
 
 .fieldset label {
