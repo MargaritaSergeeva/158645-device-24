@@ -315,3 +315,33 @@ a {
 
 /* ###########################################CATALOG############################################### */
 
+.container h1 {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 800;
+	letter-spacing: 0.47px;
+	color: #000000;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+.breadcrumbs a,
+.breadcrumbs span {
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.14px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color:rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+	color:rgba(0, 0, 0, 0.1);
+}
+
+/* FILTERS */
