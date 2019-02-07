@@ -345,3 +345,76 @@ a {
 }
 
 /* FILTERS */
+
+.filters {
+	background-color: #efefef;
+}
+
+.filters > h2{
+	background-color: #dbdbdb;
+}
+
+.filters h2 {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 3.2px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.sort a {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sort a:first-of-type {
+	color: #000000;
+}
+
+.sort a:hover,
+.sort a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sort a:active {
+	color: #000000;
+}
+
+.sort a:last-of-type,
+.sort a:nth-last-of-type(2) {
+	font-size: 0;
+}
+
+.filter-price > span,
+.filters-form legend {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.filter-price label {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.fieldset label {
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.14px;
+	color: #000000;
+}
+
+.fieldset input:disabled + label {
+	color: #a6a6a6;
+}
