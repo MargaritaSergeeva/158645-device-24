@@ -313,7 +313,7 @@ a {
 	color: #000000;
 }
 
-/* ###########################################CATALOG############################################### */
+/* ###########################################INNER PAGE############################################### */
 
 .container h1 {
 	font-family: "Gilroy", Arial, sans-serif;
@@ -417,4 +417,24 @@ a {
 
 .fieldset input:disabled + label {
 	color: #a6a6a6;
+}
+
+/* CATALOG */
+
+.item-title a{
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.catalog-item span {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	letter-spacing: 0.16px;
+	color: #464646;
 }
