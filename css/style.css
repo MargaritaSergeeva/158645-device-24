@@ -2,7 +2,7 @@
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"),
   url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
@@ -170,7 +170,7 @@ a {
 }
 
 .main-footer address {
-  font-style: normal;
+  font-style: 400;
   color: #ffffff;
 }
 
@@ -347,7 +347,7 @@ a {
 .contact-form textarea {
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   color: #464646;
 
   background-color: rgba(229, 229, 229, 0.5);
@@ -370,7 +370,7 @@ a {
 .contact-form textarea::placeholder {
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(70, 70, 70, 0.4);
 }
 
@@ -435,7 +435,7 @@ a {
 .sort a {
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
 }
 
