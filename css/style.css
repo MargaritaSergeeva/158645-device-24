@@ -288,9 +288,15 @@ a {
 .promo-slide {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 105px;
   padding: 0 60px 0 30px;
 
   background-image: linear-gradient(rgba(240, 197, 46, 0.5) 112px, #ffffff 112px);
+}
+
+.promo-slide-2.pop-up,
+.promo-slide-3.pop-up {
+  display: none;
 }
 
 .wrapper-slide-img {
@@ -337,9 +343,23 @@ a {
 
 /* CATEGORIES */
 
+.categories {
+  margin-bottom: 85px;
+}
+
 .categories ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
-} 
+}
+
+.categories li {
+  width: 160px;
+  min-height: 240px;
+}
 
 .categories a {
   font-family: "Gilroy", Arial, sans-serif;
