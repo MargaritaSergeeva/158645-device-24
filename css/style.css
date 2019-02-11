@@ -2,8 +2,8 @@ body > * {outline: 3px solid #4b054b}
 body > * > * {outline: 3px solid rgb(255, 0, 0)}
 body > * > * > * {outline: 3px solid rgb(0, 255, 0)}
 body > * > * > * > * {outline: 1px solid blue} 
-/* form button, p{outline: 1px solid blue}
-a, span, img, input, b {outline: 1px solid brown} */
+body > * > * > * > * > * {outline: 1px solid brown}
+/* a, span, img, input, b {outline: 1px solid brown}  */
 
  
  @font-face {
@@ -73,7 +73,7 @@ a {
   overflow: hidden;
 }
 
-.button {
+.button { 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -223,16 +223,38 @@ a {
 /* ##################################################FOOTER########################################### */
 
 .main-footer {
+  margin-top: 90px;
+
   background-color: #464646;
+}
+
+.main-footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.wrapper-footer-user {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.main-footer-logo {
+  width: 163px;
+  height: 35px;
 }
 
 .main-footer a {
   color: #ffffff;
 }
 
-.main-footer address {
-  font-style: 400;
-  color: #ffffff;
+.footer-user-navigation {
+  display: flex;
+  width: 500px;
+}
+
+.footer-user-navigation .exit {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-user-navigation a {
@@ -247,6 +269,17 @@ a {
 
 .footer-user-navigation a:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer address {
+  width: 210px;
+
+  font-style: 400;
+  color: #ffffff;
+}
+
+.footer-site-navigation {
+  display: flex;
 }
 
 .footer-site-navigation a {
@@ -267,13 +300,34 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-user-navigation .exit {
-  color: rgba(255, 255, 255, 0.3);
+.wrapper-footer-info {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.wrapper-footer-info a {
+  width: 168px;
+}
+
+.wrapper-footer-links {
+  display: flex; 
+  justify-content: flex-end;
+}
+
+.footer-social {
+  width: 160px;
+  height: 32px;
 }
 
 .social-button,
 .developer {
   font-size: 0;
+}
+
+.developer {
+  width: 27px;
+  height: 35px;
+  margin-left: 470px;
 }
 
 /* ###################################################INDEX############################################ */
@@ -349,7 +403,8 @@ a {
 
 .categories ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -359,6 +414,11 @@ a {
 .categories li {
   width: 160px;
   min-height: 240px;
+  margin-left: 40px;
+}
+
+.categories li:nth-child(6n+1) {
+  margin-left: 0;
 }
 
 .categories a {
@@ -377,7 +437,18 @@ a {
 /* SERVICES-SLIDER */
 
 .services-sliders {
-  background-color: #e5e5e5;
+  margin-bottom: 95px;
+
+  background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
+}
+
+.services-sliders .container {
+  display: flex;
+}
+
+.services-slide {
+  width: 700px;
+  margin-left: 120px;
 }
 
 .services-slide h2 {
@@ -390,6 +461,10 @@ a {
 }
 
 .services-sliders-nav {
+  order: -1;
+  width: 280px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -403,7 +478,33 @@ a {
   outline: none;
 }
 
+/* BEST BRANDS */
+
+.best-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 95px;
+}
+
+.best-brands a {
+  margin-left: 40px; 
+}
+
+.best-brands a:nth-of-type(4n+1) {
+  margin-left: 0; 
+}
+
 /* ABOUT US */
+
+.wrapper-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 460px;
+}
 
 .about-us h2 {
   font-family: "Gilroy", Arial, sans-serif;
@@ -425,6 +526,10 @@ a {
 }
 
 /* CONTACTS */
+
+.contacts {
+  width: 560px;
+}
 
 .contacts h2 {
   font-family: "Gilroy", Arial, sans-serif;
