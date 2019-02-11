@@ -1,3 +1,11 @@
+body > * {outline: 3px solid #4b054b}
+body > * > * {outline: 3px solid rgb(255, 0, 0)}
+body > * > * > * {outline: 3px solid rgb(0, 255, 0)}
+body > * > * > * > * {outline: 1px solid blue} 
+/* form button, p{outline: 1px solid blue}
+a, span, img, input, b {outline: 1px solid brown} */
+
+ 
  @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"),
@@ -26,7 +34,16 @@
   font-weight: 300;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   
@@ -72,10 +89,46 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.pop-up {
+  display: none;
+}
+
 /* ##############################################HEADER################################################ */
 
 .main-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 1px 60px;
+
   background-color: rgba(240, 197, 46, 0.5);
+}
+
+.main-header h1 {
+  width: 163px;
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-header .main-header-logo {
+  display: block;
+}
+
+.main-header .logo-block {
+  width: 163px;
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper-user-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.main-header .search {
+  width: 440px;
 }
 
 .search input[type="search"] {
@@ -116,12 +169,20 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.wrapper-user-block .user-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 505px;
+}
+
 .site-navigation ul,
 .user-navigation ul {
   list-style: none;
 }
 
 .site-navigation {
+  margin-bottom: 55px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -217,7 +278,21 @@ a {
 
 /* ###################################################INDEX############################################ */
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* PROMO-SLIDER */
+
+.promo-slide {
+  display: flex;
+  padding: 0 60px;
+}
+
+.promo-slide img {
+  width: 440px;
+}
 
 .promo-slide b {
   font-family: "Gilroy", Arial, sans-serif;
