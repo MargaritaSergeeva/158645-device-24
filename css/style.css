@@ -100,7 +100,7 @@ a {
   margin: 0 auto;
   padding: 1px 60px;
 
-  background-color: rgba(240, 197, 46, 0.5);
+  background-image: linear-gradient(#ffffff 40px, rgba(240, 197, 46, 0.5) 40px);
 }
 
 .main-header h1 {
@@ -287,11 +287,24 @@ a {
 
 .promo-slide {
   display: flex;
-  padding: 0 60px;
+  justify-content: space-between;
+  padding: 0 60px 0 30px;
+
+  background-image: linear-gradient(rgba(240, 197, 46, 0.5) 112px, #ffffff 112px);
 }
 
-.promo-slide img {
-  width: 440px;
+.wrapper-slide-img {
+  display: flex;
+  width: 530px;
+  height: 490px;
+}
+
+.wrapper-slide-img img {
+  margin: auto;
+}
+
+.wrapper-slide-text {
+  width: 500px;
 }
 
 .promo-slide b {
