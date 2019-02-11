@@ -1,8 +1,8 @@
 body > * {outline: 3px solid #4b054b}
 body > * > * {outline: 3px solid rgb(255, 0, 0)}
 body > * > * > * {outline: 3px solid rgb(0, 255, 0)}
-body > * > * > * > * {outline: 1px solid blue} 
-body > * > * > * > * > * {outline: 1px solid brown}
+ body > * > * > * > * {outline: 1px solid blue} 
+/* body > * > * > * > * > * {outline: 1px solid brown}  */
 /* a, span, img, input, b {outline: 1px solid brown}  */
 
  
@@ -595,7 +595,14 @@ a {
 
 /* ###########################################INNER PAGE############################################### */
 
+.container.title-block {
+  padding-left: 60px;
+}
+
 .container h1 {
+  margin-top: 45px;
+  margin-bottom: 25px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -605,6 +612,10 @@ a {
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
