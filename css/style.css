@@ -125,18 +125,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header h1 {
-  width: 163px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .main-header .main-header-logo {
   display: block;
-}
-
-.main-header .logo-block {
   width: 163px;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
