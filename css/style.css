@@ -68,22 +68,10 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
+.container {
+  width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .button {
@@ -106,12 +94,31 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 /* ##############################################HEADER################################################ */
 
 .main-header {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 1px 60px;
+  padding-top: 22px;
+  padding-right: 60px;
+  padding-bottom: 55px;
+  padding-left: 60px;
 
   background-image: linear-gradient(#ffffff 40px, rgba(240, 197, 46, 0.5) 40px);
 }
@@ -119,7 +126,7 @@ input[type="radio"].visually-hidden {
 .main-header h1 {
   width: 163px;
   height: 35px;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -194,8 +201,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  margin-bottom: 55px;
-
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -345,11 +350,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* ###################################################INDEX############################################ */
-
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
 
 /* PROMO-SLIDER */
 
@@ -616,7 +616,7 @@ input[type="radio"].visually-hidden {
   padding-left: 60px;
 }
 
-.container h1 {
+.container .main-title {
   margin-top: 45px;
   margin-bottom: 25px;
 
@@ -671,7 +671,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   right: 0;
   z-index: -1;
-  
+
   width: 100%;
   height: 100%;
 
@@ -693,8 +693,8 @@ input[type="radio"].visually-hidden {
 .filters {
   display: flex;
   flex-direction: column;
-  padding-left: 60px;
   padding-right: 68px;
+  padding-left: 60px;
 
   background-color: #efefef;
   box-shadow: inset 0 70px #dbdbdb;
