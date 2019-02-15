@@ -446,11 +446,11 @@ input[type="radio"].visually-hidden {
 }
 
 .categories li {
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.categories li:nth-child(6n+1) {
-  margin-left: 0;
+.categories li:nth-child(6n) {
+  margin-right: 0;
 }
 
 .categories a {
