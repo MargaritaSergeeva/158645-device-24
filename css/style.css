@@ -498,10 +498,10 @@ input[type="radio"].visually-hidden {
 }
 
 .services-sliders-nav {
-  order: -1;
   width: 280px;
   margin: 0;
   padding: 0;
+  
   list-style: none;
 }
 
