@@ -501,7 +501,7 @@ input[type="radio"].visually-hidden {
   width: 280px;
   margin: 0;
   padding: 0;
-  
+
   list-style: none;
 }
 
@@ -785,7 +785,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-input:disabled + label {
+.checkbox-color:disabled + label,
+.radio-bluetooth:disabled + label {
   color: #a6a6a6;
 }
 
