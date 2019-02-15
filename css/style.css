@@ -632,11 +632,11 @@ input[type="radio"].visually-hidden {
 
 /* ###########################################INNER PAGE############################################### */
 
-.container.title-block {
+.main-inner > .container {
   padding-left: 60px;
 }
 
-.container .main-title {
+.main-title {
   margin-top: 45px;
   margin-bottom: 25px;
 
