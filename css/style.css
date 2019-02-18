@@ -615,7 +615,8 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.categories a {
+.categories .category-item {
+  position: relative;
   display: block;
   width: 160px;
   min-height: 240px;
@@ -628,20 +629,43 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.categories a:active {
+.categories .category-item:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.categories a::before {
+.categories .category-item::before {
   content: "";
   display: block;
   width: 160px;
   height: 160px;
   margin-bottom: 33px;
 
-  background-color: rgba(240, 197, 46, 0.5);
   background-repeat: no-repeat;
   background-position: 50%;
+}
+
+.categories .category-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 160px;
+  height: 160px;
+  margin-bottom: 33px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.category-item:hover::after,
+.category-item:focus::after,
+.category-item:active::after {
+  background-color: #f0c52e;
+}
+
+.category-item:active::before {
+  opacity: 0.3;
 }
 
 .categories .category-virtual-reality::before {
@@ -649,9 +673,17 @@ input[type="radio"].visually-hidden {
   background-position: 31px 52px;
 }
 
+.category-virtual-reality:active::before {
+  background-position-x: 30px;
+}
+
 .categories .category-monopods::before {
   background-image: url(../img/monopods.svg);
   background-position: 38px 41px;
+}
+
+.category-monopods:active::before {
+  background-position-x: 37px;
 }
 
 .categories .category-action-cameras::before {
@@ -659,9 +691,17 @@ input[type="radio"].visually-hidden {
   background-position: 49px 38px;
 }
 
+.category-action-cameras:active::before {
+  background-position-x: 48px;
+}
+
 .categories .category-fitness-bracelets::before {
   background-image: url(../img/fitness-bracelets.svg);
   background-position: 28px 50px;
+}
+
+.category-fitness-bracelets:active::before {
+  background-position-x: 27px;
 }
 
 .categories .category-smart-watch::before {
@@ -669,9 +709,17 @@ input[type="radio"].visually-hidden {
   background-position: 55px 32px;
 }
 
+.category-smart-watch:active::before {
+  background-position-x: 54px;
+}
+
 .categories .category-quadcopters::before {
   background-image: url(../img/quadcopters.svg);
   background-position: 13px 49px;
+}
+
+.category-quadcopters:active::before {
+  background-position-x: 12px;
 }
 
 /* SERVICES-SLIDER */
@@ -741,7 +789,7 @@ input[type="radio"].visually-hidden {
 
 .services-slide h2 {
   margin: 0;
-  margin-bottom: 31px; 
+  margin-bottom: 31px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
