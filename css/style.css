@@ -481,7 +481,7 @@ input[type="radio"].visually-hidden {
 /* PROMO-SLIDER */
 
 .promo-slider {
-  margin-bottom: 105px;
+  margin-bottom: 104px;
   padding-right: 50px;
   padding-left: 30px;
 
@@ -627,6 +627,48 @@ input[type="radio"].visually-hidden {
 
 .categories a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.categories a::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 33px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.categories .category-virtual-reality::before {
+  background-image: url(../img/virtual-reality.svg);
+  background-position: 31px 52px;
+}
+
+.categories .category-monopods::before {
+  background-image: url(../img/monopods.svg);
+  background-position: 38px 41px;
+}
+
+.categories .category-action-cameras::before {
+  background-image: url(../img/action-cameras.svg);
+  background-position: 49px 38px;
+}
+
+.categories .category-fitness-bracelets::before {
+  background-image: url(../img/fitness-bracelets.svg);
+  background-position: 28px 50px;
+}
+
+.categories .category-smart-watch::before {
+  background-image: url(../img/smart-watch.svg);
+  background-position: 55px 32px;
+}
+
+.categories .category-quadcopters::before {
+  background-image: url(../img/quadcopters.svg);
+  background-position: 13px 49px;
 }
 
 /* SERVICES-SLIDER */
