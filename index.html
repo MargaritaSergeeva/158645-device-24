@@ -18,7 +18,7 @@
         <div class="wrapper-user-block">
           <div class="search">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <input name="search" type="search" placeholder="Поиск по сайту">
+              <input class="search-input" name="search" type="search" placeholder="Поиск по сайту">
               <button class="search-btn pop-up" type="submit">Найти</button>
             </form>
           </div>
@@ -34,22 +34,26 @@
         </div>
         <nav>
           <ul class="site-navigation">
-            <li>
-              <a href="#">Каталог товаров</a>
+            <li class="catalog-list-item">
+              <a class="catalog-link" href="#">Каталог товаров</a>
               <!-- POP-UP -->
               <ul class="catalog-navigation pop-up">
-                <li><a class="catalog-nav-item" href="virtual-reality.html">Виртуальная реальность</a></li>
-                <li><a class="catalog-nav-item" href="catalog.html">Моноподы для селфи</a></li>
-                <li><a class="catalog-nav-item" href="action-cameras.html">Экшн-камеры</a></li>
-                <li><a class="catalog-nav-item" href="fitness-bracelets.html">Фитнес-браслеты</a></li>
-                <li><a class="catalog-nav-item" href="smart-watch.html">Умные часы</a></li>
+                <li>
+                  <a class="catalog-nav-item" href="virtual-reality.html">Виртуальная реальность</a>
+                  <a class="catalog-nav-item" href="catalog.html">Моноподы для селфи</a>
+                  <a class="catalog-nav-item" href="action-cameras.html">Экшн-камеры</a>
+                </li>
+                <li>
+                  <a class="catalog-nav-item" href="fitness-bracelets.html">Фитнес-браслеты</a>
+                  <a class="catalog-nav-item" href="smart-watch.html">Умные часы</a>
+                </li>
                 <li><a class="catalog-nav-item" href="quadcopters.html">Квадрокоптеры</a></li>
               </ul>
               <!--/POP-UP -->
             </li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="delivery-list-item"><a href="#">Доставка</a></li>
+            <li class="warranty-list-item"><a href="#">Гарантия</a></li>
+            <li class="credit-list-item"><a href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -59,25 +63,25 @@
       <div class="container">
         <section class="promo-slider">
           <h2 class="visually-hidden">Самые популярные товары</h2>
-          <div class="promo-slide promo-slide-1">
+          <div class="promo-slide promo-slide-1 pop-up">
             <h3 class="visually-hidden">Самая длинная селфи-палка</h3>
             <div class="wrapper-slide-img">
               <img src="img/long-stick.png" width="384" height="486" alt="Длинная селфи-палка">
             </div>
             <div class="wrapper-slide-text">
-              <b>Делай селфи, как Бен Стиллер!</b>
+              <b>Делай селфи, <br> как Бен Стиллер!</b>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a class="button" href="#">Подробнее</a>
               <table>
                 <tr>
-                  <th>Длина палки</th>
-                  <th>Вес палки</th>
-                  <th>Материал</th>
-                </tr>
-                <tr>
                   <td>8,5 м</td>
                   <td>5 кг</td>
                   <td>Карбон</td>
+                </tr>
+                <tr class="table-title">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
                 </tr>
               </table>
             </div>
@@ -88,20 +92,20 @@
               <img src="img/fitness-bracelet.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
             </div>
             <div class="wrapper-slide-text">
-              <b>Худеем правильно!</b>
+              <b>Худеем <br> правильно!</b>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="button" href="#">Подробнее</a>
               <table>
                 <tr>
-                  <th>Без подзарядки</th>
-                </tr>
-                <tr>
                   <td>48 часов</td>
+                </tr>
+                <tr class="table-title">
+                  <td>Без подзарядки</td>
                 </tr>
               </table>
             </div>
           </div>
-          <div class="promo-slide promo-slide-3 pop-up">
+          <div class="promo-slide promo-slide-3">
             <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
             <div class="wrapper-slide-img">
               <img src="img/quadcopter.png" width="526" height="334" alt="Квадрокоптер с лазером">
@@ -112,12 +116,12 @@
               <a class="button" href="#">Подробнее</a>
               <table>
                 <tr>
-                  <th>Дальность полета</th>
-                  <th>Радиус поражения</th>
-                </tr>
-                <tr>
                   <td>800 м</td>
                   <td>50 м</td>
+                </tr>
+                <tr class="table-title">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
                 </tr>
               </table>
             </div>
@@ -157,10 +161,10 @@
               <button class="button services-slide-btn">Гарантия</button>
             </li>
             <li class="services-slide-radio">
-              <button class="button services-slide-btn">Кредит</button>
+            <button class="button services-slide-btn">Кредит</button>
             </li>
           </ul>
-          <div class="services-slide devivery-slide">
+          <div class="services-slide delivery-slide">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
