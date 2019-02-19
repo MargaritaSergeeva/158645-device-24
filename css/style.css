@@ -485,7 +485,7 @@ input[type="radio"].visually-hidden {
 /* PROMO-SLIDER */
 
 .promo-slider {
-  margin-bottom: 104px;
+  margin-bottom: 107px;
   padding-right: 50px;
   padding-left: 30px;
 
@@ -560,7 +560,7 @@ input[type="radio"].visually-hidden {
 
 .promo-slide td {
   padding-right: 76px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
@@ -571,7 +571,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slide td:nth-child(2) {
-  padding-right: 73px;
+  padding-right: 75px;
 }
 
 .promo-slide td:last-child {
@@ -728,9 +728,9 @@ input[type="radio"].visually-hidden {
 /* SERVICES-SLIDER */
 
 .services-slider {
-  margin-bottom: 95px;
+  margin-bottom: 94px;
   padding-top: 73px;
-  padding-bottom: 70px;
+  padding-bottom: 69px;
 
   background-color: #e5e5e5;
   box-shadow: inset 0 100px #ffffff;
@@ -848,16 +848,49 @@ input[type="radio"].visually-hidden {
 .best-brands {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 95px;
+  margin-bottom: 90px;
 }
 
 .best-brands a {
   margin-right: 40px;
 }
 
+.best-brands .logo-gopro {
+  margin-right: 37px;
+}
+
 .best-brands a:nth-of-type(4n) {
   margin-right: 0;
+}
+
+.best-brands a::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+
+  background-color: white;
+  background-position: 50%;
+}
+
+.best-brands a:hover::before {
+  display: none;
+}
+
+.best-brands .logo-dji::before {
+  background-image: url(../img/logo-dji-gray.png);
+}
+
+.best-brands .logo-spgadget::before {
+  background-image: url(../img/logo-spgadget-gray.png);
+}
+
+.best-brands .logo-gopro::before {
+  background-image: url(../img/logo-gopro-gray.png);
+}
+
+.best-brands .logo-vive::before {
+  background-image: url(../img/logo-vive-gray.png);
 }
 
 /* ABOUT US */
