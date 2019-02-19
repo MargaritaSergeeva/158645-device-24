@@ -79,8 +79,8 @@ img {
   position: relative;
 
   display: inline-block;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 10px;
+
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -848,7 +848,7 @@ input[type="radio"].visually-hidden {
 .best-brands {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 90px;
+  margin-bottom: 84px;
 }
 
 .best-brands a {
@@ -893,18 +893,26 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/logo-vive-gray.png);
 }
 
-/* ABOUT US */
+/* ABOUT US CONTACTS*/
 
 .wrapper-info {
   display: flex;
   justify-content: space-between;
+
+  padding-top: 52px;
+  padding-bottom: 82px;
 }
 
-.about-us {
-  width: 460px;
+.wrapper-info h2,
+.wrapper-info p,
+.wrapper-info ul {
+  margin: 0;
+  padding: 0;
 }
 
-.about-us h2 {
+.wrapper-info h2 {
+  margin-bottom: 43px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -913,7 +921,46 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.delivery-companies {
+.about-us::before,
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: -52px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
+.contacts::before {
+  left: 2px;
+}
+
+.about-us {
+  position: relative;
+
+  width: 466px;
+}
+
+.about-us h2 {
+  margin-left: -2px;
+}
+
+.about-us p {
+  margin-bottom: 30px;
+}
+
+.about-us p:nth-of-type(2) {
+  margin-bottom: 66px;
+
+  letter-spacing: -0.15px;
+}
+
+.about-us .delivery-companies {
+  margin-bottom: 54px;
+  padding-left: 36px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
@@ -923,20 +970,33 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-/* CONTACTS */
+.about-us .button {
+  padding-right: 19px;
+  padding-left: 23px;
+}
 
 .contacts {
-  width: 560px;
+  position: relative;
+
+  width: 562px;
 }
 
-.contacts h2 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 47px;
-  line-height: 48px;
-  font-weight: 800;
-  letter-spacing: 0.47px;
-  color: #000000;
+.contacts p {
+  margin-bottom: 39px;
 }
+
+.contact-map {
+  display: block;
+  margin-bottom: 60px;
+  padding-left: 2px;
+}
+
+.contacts .button {
+  margin-left: 2px;
+  padding-right: 36px;
+  padding-left: 41px;
+}
+
 
 /* CONTACT FORM */
 
