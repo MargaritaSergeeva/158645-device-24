@@ -89,7 +89,7 @@ img {
   letter-spacing: 3.65px;
   text-transform: uppercase;
 
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   outline: none;
 }
@@ -181,7 +181,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search .search-form {
-  width: 441px;
+  width: 450px;
 }
 
 .search .search-input {
@@ -193,12 +193,12 @@ input[type="radio"].visually-hidden {
   padding-bottom: 15px;
   padding-left: 37px;
 
-  background-color: inherit;
+  background-color: transparent;
   border: 2px solid transparent;
 }
 
 .search .search-input:focus {
-  background-color: inherit;
+  background-color: transparent;
   border-bottom: 2px solid #000000;
   outline: none;
 }
@@ -223,7 +223,7 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
 
-  background-color: inherit;
+  background-color: transparent;
   border: 2px solid #000000;
 }
 
@@ -1152,7 +1152,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   z-index: -1;
 
-  width: calc(50% - 580px);
+  width: calc(50% - 570px);
   height: 100%;
 
   background-color: #efefef;
@@ -1165,7 +1165,7 @@ input[type="radio"].visually-hidden {
   right: 0;
   z-index: -1;
 
-  width: calc(50% - 580px);
+  width: calc(50% - 570px);
   height: 100%;
 
   box-shadow: inset 0 70px #efefef;
@@ -1302,7 +1302,7 @@ input[type="radio"].visually-hidden {
 .filter-price input {
   width: 68px;
 
-  background-color: inherit;
+  background-color: transparent;
   border: none;
 }
 
@@ -1382,7 +1382,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort a:first-of-type {
+.sort .active {
   color: #000000;
 }
 
@@ -1399,6 +1399,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.sort .active:hover {
+  color: #000000;
+}
+
 .sort a:last-of-type,
 .sort a:nth-last-of-type(2) {
   font-size: 0;
@@ -1410,6 +1414,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 832px;
   padding-top: 69px;
   padding-left: 72px;
   padding-bottom: 77px;
@@ -1526,10 +1531,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 760px;
   margin: 0;
-  padding-top: 20px;
-  padding-right: 26px;
-  padding-bottom: 20px;
-  padding-left: 30px;
+  padding: 0;
 
   list-style: none;
 
@@ -1537,6 +1539,10 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination a {
+  display: inline-flex;
+  padding-top: 24px;
+  padding-bottom: 22px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1547,7 +1553,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination .pagination-prev {
-  margin-right: 238px;
+  margin-right: 212px;
 }
 
 .pagination .pagination-page {
@@ -1562,24 +1568,47 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
+.pagination-prev a,
+.pagination-next a {
+  padding-right: 27px;
+  padding-left: 29px;
+}
+
+.pagination-next a {
+  padding-left: 31px;
+}
+
+.pagination-prev a:hover,
+.pagination-next a:hover,
+.pagination-prev a:focus,
+.pagination-next a:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-prev a:active,
+.pagination-next a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d9d9d9;
+}
+
 .pagination-page a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination .active {
+.pagination-page .active {
   color: #000000;
 }
 
-.pagination .pagination-page:hover,
-.pagination .pagination-page:focus {
+.pagination-page a:hover,
+.pagination-page a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.pagination .pagination-page:active {
+.pagination-page a:active {
   color: #000000;
 }
 
-.pagination .pagination-prev:active,
-.pagination .pagination-next:active {
-  color: rgba(0, 0, 0, 0.3);
+.pagination-page .active:hover {
+  color: #000000;
 }
