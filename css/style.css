@@ -119,7 +119,7 @@ img {
   height: 40px;
 }
 
-.pop-up:not(:focus):not(:active) {
+.pop-up {
   display: none;
 }
 
