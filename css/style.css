@@ -940,7 +940,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  padding-top: 52px;
   padding-bottom: 82px;
 }
 
@@ -962,26 +961,23 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.about-us {
+  position: relative;
+
+  width: 466px;
+  padding-top: 52px;
+}
+
 .about-us::before,
 .contacts::before {
   content: "";
   position: absolute;
-  top: -52px;
+  top: 0;
 
   width: 80px;
   height: 7px;
 
   background-color: #000000;
-}
-
-.contacts::before {
-  left: 2px;
-}
-
-.about-us {
-  position: relative;
-
-  width: 466px;
 }
 
 .about-us h2 {
@@ -1020,6 +1016,11 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 562px;
+  padding-top: 52px;
+}
+
+.contacts::before {
+  left: 2px;
 }
 
 .contacts p {
