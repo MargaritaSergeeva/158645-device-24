@@ -92,6 +92,8 @@ img {
   background-color: transparent;
   border: none;
   outline: none;
+
+  cursor: pointer;
 }
 
 .button:active {
@@ -422,6 +424,7 @@ input[type="radio"].visually-hidden {
 .site-navigation .catalog-navigation {
   position: absolute;
   left: -60px;
+  z-index: 1;
 
   width: 1160px;
   padding-top: 21px;
@@ -535,7 +538,7 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper-footer-info .contact-number {
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .main-footer address {
@@ -612,6 +615,8 @@ input[type="radio"].visually-hidden {
 /* PROMO-SLIDER */
 
 .promo-slider {
+  position: relative;
+
   margin-bottom: 108px;
   padding-right: 50px;
   padding-left: 30px;
@@ -620,6 +625,8 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slide {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 }
@@ -647,8 +654,50 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper-slide-text {
+  position: relative;
+
   width: 511px;
   padding-top: 81px;
+}
+
+.wrapper-slide-text::before {
+  content: "";
+  position: absolute;
+  top: 39px;
+  left: 1px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
+
+.promo-slide::before {
+  position: absolute;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 179.2px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+}
+
+.promo-slide-1::before {
+  content: "01";
+  right: 0;
+  top: 63px;
+}
+
+.promo-slide-2::before {
+  content: "02";
+  right: -3px;
+  top: 61px;
+}
+
+.promo-slide-3::before {
+  content: "03";
+  right: -3px;
+  top: 61px;
 }
 
 .promo-slide b {
@@ -722,7 +771,30 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-sliders-nav {
+  position: absolute;
+  right: 62px;
+  bottom: 122px;
+
+  display: flex;
+
   list-style: none;
+}
+
+.promo-slide-btn {
+  width: 12px;
+  height: 12px;
+  margin-right: 21px;
+
+  background-color: transparent;
+  background-image: url(../img/slider-button-empty.svg);
+  background-size: 100%;
+  border: none;
+
+  cursor: pointer;
+}
+
+.slide-btn-chacked {
+  background-image: url(../img/slider-button.svg);
 }
 
 /* CATEGORIES */
@@ -1125,7 +1197,7 @@ input[type="radio"].visually-hidden {
 
 .contacts .modal {
   background-color: #ffffff;
-  box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
 .contact-form label {
