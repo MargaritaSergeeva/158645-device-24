@@ -64,9 +64,9 @@
         <h1 class="main-title">Моноподы для селфи</h1>
         <nav>
           <ol class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Каталог товаров</a></li>
-            <li><span>Моноподы для селфи</span></li>
+            <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+            <li class="breadcrumbs-item"><span>Моноподы для селфи</span></li>
           </ol>
         </nav>
       </div>
@@ -91,37 +91,23 @@
               </div>
               <fieldset class="fieldset filters-color">
                 <legend>Цвет</legend>
-                <label>
-                  <input class="checkbox-color" type="checkbox" name="black" checked>
-                  Черный
-                </label>
-                <label>
-                  <input class="checkbox-color" type="checkbox" name="white">
-                  Белый
-                </label>
-                <label>
-                  <input class="checkbox-color" type="checkbox" name="blue" checked>
-                  Синий
-                </label>
-                <label>
-                  <input class="checkbox-color" type="checkbox" name="red" checked>
-                  Красный
-                </label>
-                <label>
-                  <input class="checkbox-color" type="checkbox" name="pink">
-                  Розовый
-                </label>
+                <input class="checkbox-color visually-hidden" id="black-color" type="checkbox" name="black" checked>
+                <label class="checkbox-black-color" for="black-color">Черный</label>
+                <input class="checkbox-color visually-hidden" id="white-color" type="checkbox" name="white">
+                <label class="checkbox-white-color" for="white-color">Белый</label>
+                <input class="checkbox-color visually-hidden" id="blue-color" type="checkbox" name="blue" checked>
+                <label class="checkbox-blue-color" for="blue-color">Синий</label>
+                <input class="checkbox-color visually-hidden" id="red-color" type="checkbox" name="red" checked>
+                <label class="checkbox-red-color" for="red-color">Красный</label>
+                <input class="checkbox-color visually-hidden" id="pink-color" type="checkbox" name="pink">
+                <label class="checkbox-pink-color" for="pink-color">Розовый</label>
               </fieldset>
               <fieldset class="fieldset filters-bluetooth">
                 <legend>Bluetooth</legend>
-                <label>
-                  <input class="radio-bluetooth" type="radio" name="bluetooth" value="yes" checked>
-                  Есть
-                </label>
-                <label>
-                  <input class="radio-bluetooth" id="without-bluetooth" type="radio" name="bluetooth" value="no">
-                  Нет
-                </label>
+                <input class="radio-bluetooth visually-hidden" id="with-bluetooth" type="radio" name="bluetooth" value="yes" checked>
+                <label class="radio-with-bluetooth" for="with-bluetooth">Есть</label>
+                <input class="radio-bluetooth visually-hidden" id="without-bluetooth" type="radio" name="bluetooth" value="no">
+                <label class="radio-without-bluetooth" for="without-bluetooth">Нет</label>
               </fieldset>
               <button class="button" type="submit">Показать</button>
             </form>
@@ -132,8 +118,12 @@
               <a class="active" href="#">По цене</a>
               <a href="#">По типу</a>
               <a href="#">По популярности</a>
-              <a href="#">От большего к меньшему</a>
-              <a href="#">От меньшего к большему</a>
+              <a class="sort-min-max" href="#">
+                <span class="visually-hidden">По возрастанию</span>
+              </a>
+              <a class="sort-max-min sort-active" href="#">
+                <span class="visually-hidden">По убыванию</span>
+              </a>
             </section>
             <section class="catalog">
               <h2 class="visually-hidden">Список моноподов для селфи</h2>
