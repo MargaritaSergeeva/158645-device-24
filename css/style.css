@@ -2227,6 +2227,36 @@ input[type="radio"].visually-hidden {
   margin-bottom: 35px;
 }
 
+.catalog .new-item {
+  position: relative;
+}
+
+.catalog .new-item::before {
+  content: "new";
+  position: absolute;
+  top: 29px;
+  right: 27px;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  color: rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
 .catalog-item .catalog-item-image,
 .catalog-item h3 {
   margin: 0;
