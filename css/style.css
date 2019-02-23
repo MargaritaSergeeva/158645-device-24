@@ -1409,14 +1409,51 @@ input[type="radio"].visually-hidden {
   left: 2px;
 }
 
-.contacts p {
+.contacts > p {
   margin-bottom: 39px;
 }
 
 .contact-map {
+  position: relative;
+
   display: block;
   margin-bottom: 60px;
   padding-left: 2px;
+}
+
+.modal-map {
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  left: -498px;
+
+  width: 960px;
+  height: 559px;
+
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: transparent;
+  background-image: url(../img/modal-close.svg);
+  border: none;
+  opacity: 0.5;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
 }
 
 .contacts .button {
@@ -1425,15 +1462,51 @@ input[type="radio"].visually-hidden {
   padding-left: 41px;
 }
 
-
 /* CONTACT FORM */
 
 .contacts .modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%; 
+
+  width: 960px;
+  height: 553px;
+  margin-top: -276px;
+  margin-left: -480px;
+  padding-top: 93px;
+  padding-right: 100px;
+  padding-bottom: 84px;
+  padding-left: 100px;
+
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
+.modal .contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form .contact-form-name {
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.contact-form .contact-form-email {
+  width: 360px;
+  margin-bottom: 33px;
+}
+
+.contact-form .contact-form-text {
+  width: 760px;
+}
+
 .contact-form label {
+  display: block;
+  margin-bottom: 7px;
+  
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1453,6 +1526,24 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.contact-form input {
+  width: 360px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+}
+
+.contact-form textarea {
+  width: 760px;
+  height: 156px;
+  margin-bottom: 32px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
 .contact-form input:hover,
 .contact-form textarea:hover {
   background-color: rgba(229, 229, 229, 1);
@@ -1461,7 +1552,7 @@ input[type="radio"].visually-hidden {
 .contact-form input:focus,
 .contact-form textarea:focus {
   background-color: #ffffff;
-  outline: 3px solid #f0c52e;
+  outline: 3px solid rgba(240, 197, 46, 0.5);
   outline-offset: -3px;
 }
 
@@ -1477,6 +1568,12 @@ input[type="radio"].visually-hidden {
   color: rgba(70, 70, 70, 0.4);
 
   background-color: #edb5b5;
+}
+
+.contact-form .button {
+  margin-left: 0;
+  padding-right: 33px;
+  padding-left: 35px;
 }
 
 /* ###########################################INNER PAGE############################################### */
