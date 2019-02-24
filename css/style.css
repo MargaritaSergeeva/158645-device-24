@@ -152,8 +152,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 30px;
   padding-left: 60px;
 
-  background-color: rgba(240, 197, 46, 0.5);
-  box-shadow: inset 0 40px #ffffff;
+  background-image: linear-gradient(#ffffff 40px, rgba(240, 197, 46, 0.5) 40px);
 }
 
 .main-header h1 {
@@ -458,7 +457,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   padding-top: 21px;
   padding-left: 60px;
-  padding-bottom: 33px;
+  padding-bottom: 14px;
 
   background-color: #f7e296;
 
@@ -875,7 +874,7 @@ input[type="radio"].visually-hidden {
   padding-right: 50px;
   padding-left: 30px;
 
-  box-shadow: inset 0 113px rgba(240, 197, 46, 0.5);
+  background-image: linear-gradient(rgba(240, 197, 46, 0.5) 113px, #ffffff 113px);
 }
 
 .promo-slide {
@@ -1213,8 +1212,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 94px;
   padding-bottom: 69px;
 
-  background-color: #e5e5e5;
-  box-shadow: inset 0 100px #ffffff;
+  background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px)
 }
 
 .services-slider .container {
@@ -1777,8 +1775,7 @@ input[type="radio"].visually-hidden {
   width: calc(50% - 570px);
   height: 100%;
 
-  background-color: #efefef;
-  box-shadow: inset 0 70px #dbdbdb;
+  background-image: linear-gradient(#dbdbdb 70px, #efefef 70px);
 }
 
 .wrapper-all-sections .container::after {
@@ -1790,7 +1787,7 @@ input[type="radio"].visually-hidden {
   width: calc(50% - 570px);
   height: 100%;
 
-  box-shadow: inset 0 70px #efefef;
+  background-image: linear-gradient(#efefef 70px, #ffffff 70px);
 }
 
 .filters {
@@ -1804,8 +1801,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 77px;
   padding-left: 59px;
 
-  background-color: #efefef;
-  box-shadow: inset 0 70px #dbdbdb;
+  background-image: linear-gradient(#dbdbdb 70px, #efefef 70px);
 }
 
 .filters h2,
@@ -2093,7 +2089,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
 
-  box-shadow: inset 0 70px #efefef;
+  background-image: linear-gradient(#efefef 70px, #ffffff 70px);
 }
 
 .wrapper-sort-catalog .sort {
