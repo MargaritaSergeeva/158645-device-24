@@ -200,8 +200,13 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form .search-loupe {
+  position: relative;
+}
+
+.search-form .search-loupe::before {
+  content: "";
   position: absolute;
-  top: 18px;
+  top: 4px;
   left: 3px;
 
   width: 16px;
@@ -984,12 +989,12 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slide-2 .wrapper-slide-img {
-  padding-top: 13px;
+  padding-top: 14px;
   padding-left: 86px;
 }
 
 .promo-slide-3 .wrapper-slide-img {
-  padding-top: 66px;
+  padding-top: 67px;
   padding-left: 1px;
 }
 
