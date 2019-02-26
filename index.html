@@ -130,13 +130,13 @@
           </div>
           <ul  class="promo-sliders-nav">
             <li class="promo-slide-radio">
-              <button class="promo-slide-btn slide-btn-chacked"><span class="visually-hidden">Первый слайд</span></button>
+              <button class="promo-slide-btn slide-btn-1 slide-btn-chacked"><span class="visually-hidden">Первый слайд</span></button>
             </li>
             <li class="promo-slide-radio">
-              <button class="promo-slide-btn"><span class="visually-hidden">Второй слайд</span></button>
+              <button class="promo-slide-btn slide-btn-2"><span class="visually-hidden">Второй слайд</span></button>
             </li>
             <li class="promo-slide-radio">
-              <button class="promo-slide-btn"><span class="visually-hidden">Третий слайд</span></button>
+              <button class="promo-slide-btn slide-btn-3"><span class="visually-hidden">Третий слайд</span></button>
             </li>
           </ul>
         </section>
@@ -157,7 +157,7 @@
           <h2 class="visually-hidden">Услуги</h2>
           <ul  class="services-slider-nav">
             <li class="services-slide-radio">
-              <button class="button services-delivery-btn">Доставка</button>
+              <button class="button services-delivery-btn service-btn-chacked">Доставка</button>
             </li>
             <li class="services-slide-radio">
               <button class="button services-warranty-btn">Гарантия</button>
@@ -211,18 +211,19 @@
           <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a class="contact-map" href="#"><img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г.Москва ул.Строителей д.15"></a>
+            <a class="contact-map" href="https://yandex.ru/maps/213/moscow/?ll=37.529654%2C55.686980&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.529655%252C55.686981%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A1%25D1%2582%25D1%2580%25D0%25BE%25D0%25B8%25D1%2582%25D0%25B5%25D0%25BB%25D0%25B5%25D0%25B9%252C%252015%2520&z=16"><img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г.Москва ул.Строителей д.15"></a>
             <!-- POP UP -->
             <div class="modal-map pop-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473154!2d37.52742931538804!3d55.6870340045307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1551131441916" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
               <p>
                 <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г.Москва ул.Строителей д.15">
               </p>
               <button class="modal-close" type="button" aria-label="Зыкрыть"></button>
             </div>
             <!-- /POP UP -->
-            <a class="button" href="write-us.html">Напишите нам</a>
+            <a class="button write-us" href="write-us.html">Напишите нам</a>
             <!-- POP UP -->
-            <div class="modal pop-up">
+            <div class="modal-contact-form pop-up">
               <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="contact-form-name">
                   <label for="name">Ваше имя:</label>
@@ -298,5 +299,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
