@@ -1157,13 +1157,43 @@ input[type="radio"].visually-hidden {
   margin-right: 50px;
 }
 
-.wrapper-slide-text .button {
-  z-index: 0;
-
-  margin-left: 1px;
+.wrapper-slide-text .slide-about-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 350px;
   margin-bottom: 49px;
+  margin-left: 1px;
+  padding-top: 8px;
   padding-right: 41px;
+  padding-bottom: 8px;
   padding-left: 43px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 800;
+  letter-spacing: 3.65px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+  border: none;
+  outline: none;
+  
+  cursor: pointer;
+}
+
+.wrapper-slide-text .slide-about-btn:hover,
+.wrapper-slide-text .slide-about-btn:focus {
+  background-color: #f0c52e;
+  background-image: none;
+}
+
+.wrapper-slide-text .slide-about-btn:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .promo-slide .slide-table {
@@ -1441,9 +1471,13 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slider-nav .button:active::before {
-  width: 278px;
+  width: calc(100% + 120px);
 
   background-color: #000000;
+}
+
+.button .service-btn-name {
+  position: relative;
 }
 
 .services-slider-nav .services-delivery-btn {
@@ -1470,8 +1504,8 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 0;
 
-  width: 278px;
-  height: 40px;
+  width: calc(100% + 120px);
+  height: 100%;
 
   background-color: #000000;
 }
