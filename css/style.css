@@ -1087,13 +1087,14 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 511px;
-  padding-top: 81px;
+  margin-top: 2px;
+  padding-top: 79px;
 }
 
 .wrapper-slide-text::before {
   content: "";
   position: absolute;
-  top: 39px;
+  top: 37px;
   left: 1px;
 
   width: 100px;
