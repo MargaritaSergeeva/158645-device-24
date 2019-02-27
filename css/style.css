@@ -343,30 +343,29 @@ input[type="radio"].visually-hidden {
   top: 0;
   right: 10px;
 
-  padding-top: 14px;
-  padding-right: 17px;
-  padding-bottom: 14px;
-  padding-left: 18px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
 
-  color: #000000;
+  border: none;
 
-  background-color: transparent;
-  border: 2px solid #000000;
+  overflow: hidden;
 }
 
 .search-input:focus ~ .search-btn {
   width: auto;
   height: auto;
   margin: 0;
-  border: 2px solid #000000;
+
   padding-top: 14px;
   padding-right: 17px;
   padding-bottom: 14px;
   padding-left: 18px;
 
-  -webkit-clip-path: inset(0%);
-  clip-path: inset(0%);
-  clip: auto;
+  background-color: transparent;
+  border: 2px solid #000000;
+
   overflow: visible;
 }
 
@@ -386,9 +385,6 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
   border: 2px solid #000000;
 
-  -webkit-clip-path: inset(0%);
-  clip-path: inset(0%);
-  clip: auto;
   overflow: visible;
 }
 
