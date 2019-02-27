@@ -254,13 +254,13 @@ input[type="radio"].visually-hidden {
   width: 450px;
 }
 
-.search-form .search-loupe {
+.search-form .search-label {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.search-form .search-loupe::before {
+.search-form .search-label::before {
   content: "";
   position: absolute;
   top: 18px;
@@ -273,7 +273,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.search-form .search-loupe::after {
+.search-form .search-label::after {
   content: "";
   position: absolute;
   top: 47px;
@@ -302,7 +302,7 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.search-input:focus + .search-loupe::after {
+.search-input:focus + .search-label::after {
   display: block;
 }
 
@@ -1087,14 +1087,13 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 511px;
-  margin-top: 2px;
-  padding-top: 79px;
+  padding-top: 81px;
 }
 
 .wrapper-slide-text::before {
   content: "";
   position: absolute;
-  top: 37px;
+  top: 39px;
   left: 1px;
 
   width: 100px;
@@ -1158,33 +1157,13 @@ input[type="radio"].visually-hidden {
   margin-right: 50px;
 }
 
-.wrapper-slide-text .slide-about-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  max-width: 350px;
+.wrapper-slide-text .button {
+  z-index: 0;
+  
   margin-bottom: 49px;
   margin-left: 1px;
-  padding-top: 8px;
   padding-right: 41px;
-  padding-bottom: 8px;
   padding-left: 43px;
-
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 800;
-  letter-spacing: 3.65px;
-  text-transform: uppercase;
-
-  background-color: transparent;
-  background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
-  border: none;
-  outline: none;
-  
-  cursor: pointer;
 }
 
 .wrapper-slide-text .slide-about-btn:hover,
