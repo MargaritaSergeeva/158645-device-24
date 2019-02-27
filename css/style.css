@@ -943,15 +943,15 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 800px;
-  margin-right: 46px;
-  padding-right: 5px;
-  padding-left: 6px;
+  width: 500px;
+  margin-right: 180px;
 }
 
 .social-button {
   position: relative;
-  margin-right: 55px;
+  width: 32px;
+  height: 32px;
+  margin-right: 23px;
   margin-bottom: 50px;
 }
 
