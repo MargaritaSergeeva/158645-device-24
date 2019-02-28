@@ -1159,21 +1159,11 @@ input[type="radio"].visually-hidden {
 
 .wrapper-slide-text .button {
   z-index: 0;
-  
+
   margin-bottom: 49px;
   margin-left: 1px;
   padding-right: 41px;
   padding-left: 43px;
-}
-
-.wrapper-slide-text .slide-about-btn:hover,
-.wrapper-slide-text .slide-about-btn:focus {
-  background-color: #f0c52e;
-  background-image: none;
-}
-
-.wrapper-slide-text .slide-about-btn:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .promo-slide .slide-table {
@@ -2175,13 +2165,15 @@ input[type="radio"].visually-hidden {
 .filter-price input {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 23px;
   font-weight: 300;
+  vertical-align: middle;
   color: rgba(0, 0, 0, 0.2);
 }
 
 .filter-price input {
   width: 68px;
+  height: 23px;
 
   background-color: transparent;
   border: none;
