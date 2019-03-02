@@ -900,7 +900,14 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contact-numbers p {
+  margin: 0;
 }
 
 .contact-numbers span {
