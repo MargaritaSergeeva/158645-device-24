@@ -1,11 +1,4 @@
-/* body > * {outline: 3px solid #4b054b}
-body > * > * {outline: 3px solid rgb(255, 0, 0)}
-body > * > * > * {outline: 3px solid rgb(0, 255, 0)}
-body > * > * > * > * {outline: 1px solid blue}
-body > * > * > * > * > * {outline: 1px solid brown}
-body > * > * > * > * > * > * {outline: 1px solid black}  */
- 
- @font-face {
+@font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"),
   url("../fonts/opensans.woff") format("woff");
@@ -1674,7 +1667,6 @@ input[type="radio"].visually-hidden {
 
 .about-us .delivery-companies {
   margin-bottom: 55px;
-  padding-left: 36px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -1683,6 +1675,26 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   list-style: none;
+}
+
+.delivery-companies li {
+  position: relative;
+
+  padding-left: 36px;
+}
+
+.delivery-companies li::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 1px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
 }
 
 .about-us .button {
@@ -2636,18 +2648,11 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: flex;
   width: 760px;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 
   background-color: #efefef;
 }
 
 .pagination a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   padding-top: 24px;
   padding-bottom: 22px;
 
@@ -2662,18 +2667,27 @@ input[type="radio"].visually-hidden {
 
 .pagination .pagination-prev {
   margin-right: 212px;
+  padding-right: 27px;
+  padding-left: 29px;
 }
 
-.pagination-pages ul {
+.pagination-pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
+  margin-right: auto;
   padding: 0;
 
   list-style: none;
+}
+
+.pagination-pages a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .pagination .pagination-page {
@@ -2684,29 +2698,20 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.pagination .pagination-next {
-  margin-left: auto;
-}
-
-.pagination-prev a,
-.pagination-next a {
+.pagination-next {
   padding-right: 27px;
-  padding-left: 29px;
-}
-
-.pagination-next a {
   padding-left: 31px;
 }
 
-.pagination-prev a:hover,
-.pagination-next a:hover,
-.pagination-prev a:focus,
-.pagination-next a:focus {
+.pagination-prev:hover,
+.pagination-next:hover,
+.pagination-prev:focus,
+.pagination-next:focus {
   background-color: #d9d9d9;
 }
 
-.pagination-prev a:active,
-.pagination-next a:active {
+.pagination-prev:active,
+.pagination-next:active {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d9d9d9;
