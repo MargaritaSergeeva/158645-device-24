@@ -2549,6 +2549,10 @@ input[type="radio"].visually-hidden {
   width: 260px;
 }
 
+.wrapper-item-info .item-prof-stick {
+  width: 220px;
+}
+
 .item-title a {
   display: block;
 
