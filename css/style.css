@@ -900,10 +900,13 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contact-numbers span {
+  margin-right: 1px;
+
+  color: #ffffff;
 }
 
 .wrapper-footer-info .contact-number {
