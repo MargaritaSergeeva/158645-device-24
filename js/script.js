@@ -77,7 +77,7 @@ feedback.addEventListener("click", function (evt) {
       if (storageName) {
         userMessage.focus();
       } else {
-      userName.focus();
+        userName.focus();
       }
     }
 });

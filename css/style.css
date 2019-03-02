@@ -34,15 +34,15 @@ body > * > * > * > * > * > * {outline: 1px solid black}  */
 }
 
 html {
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
--webkit-box-sizing: inherit;
-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
