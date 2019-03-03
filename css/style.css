@@ -2589,15 +2589,36 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
 
-  width: 360px;
-  height: 380px;
-  padding-top: 172px;
-  padding-right: 79px;
-  padding-left: 81px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
 }
 
 .catalog-item-image:hover .overlay-item {
-  display: block;
+  width: 360px;
+  height: 380px;
+  margin: 0;
+  padding-top: 172px;
+  padding-right: 79px;
+  padding-bottom: 10px;
+  padding-left: 81px;
+
+  overflow: visible;
+}
+
+.catalog-item-image .overlay-item:focus-within {
+  width: 360px;
+  height: 380px;
+  margin: 0;
+  padding-top: 172px;
+  padding-right: 79px;
+  padding-bottom: 10px;
+  padding-left: 81px;
+
+  overflow: visible;
 }
 
 .catalog-item .overlay-item::before {
@@ -2622,6 +2643,7 @@ input[type="radio"].visually-hidden {
 
 .overlay-item .button {
   z-index: 0;
+
   margin-bottom: 7px;
 }
 
